@@ -1,4 +1,4 @@
-//to toggle sections 
+// To toggle sections with navigation links
 const links = document.querySelectorAll('.nav-left .nav-item');
 const sections = document.querySelectorAll('section');
 
@@ -18,9 +18,26 @@ links.forEach(link => {
     });
 });
 
+// To handle "Learn More" buttons dynamically
+const learnMoreButtons = document.querySelectorAll('.card-content a, .card-content2 a');
 
-//to toggle burger menu
+learnMoreButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
 
+        // Hide all sections
+        sections.forEach(section => section.classList.remove('active'));
+
+        // Get the target section ID from a custom data attribute
+        const target = button.getAttribute('data-target'); // e.g., 'men', 'women', etc.
+        const targetSection = document.getElementById(target);
+        if (targetSection) {
+            targetSection.classList.add('active');
+        }
+    });
+});
+
+// To toggle the burger menuu
 function toggleMenu() {
     const sideMenu = document.getElementById('sideMenu');
     const sideMenuActive = sideMenu.classList.contains('active');
@@ -31,12 +48,10 @@ function toggleMenu() {
         sideMenu.classList.add('active');
     }
     
-    // Close menu when clicking anywhere outside of it
+    // Close menu when clicking anywhere ouside of itt
     document.addEventListener('click', function(event) {
         if (!sideMenu.contains(event.target) && !document.querySelector('.burger-icon').contains(event.target)) {
             sideMenu.classList.remove('active');
         }
     });
 }
-
-  

@@ -387,9 +387,8 @@ z-index: 2;
     text-decoration: underline;
 }
 
-
 footer {
-    padding: 40px 20px;
+    margin-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -412,17 +411,25 @@ footer {
   .mainAbout {
     width: auto;
   }
-  
+  .mainAbout h4{
+    margin-bottom: 6px;
+    padding-left: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
   .mainAbout p {
+    color: #ccc;
+    margin-top: 10px;
     font-size: 0.9em;
+    line-height: 1.6;
+    text-align: left;
   }
   
   .list {
     display: flex;
     flex: auto;
-    flex-direction: column;
-    gap: 25px;
-    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: left;
     line-height: 25px;
   }
   
@@ -439,21 +446,26 @@ footer {
   
   .list a:hover {
     text-decoration: underline;
+
+  }
+
+  .club h4{
+    margin-bottom: 5px;
+  }
+
+  .services h4{
+    margin-bottom: 5px;
   }
   
-  .club {
-    width: 150px;
+  .help h4{
+    margin-bottom: 5px;
   }
   
-  .services {
-    width: 175px;
-  
+  .about h4{
+    margin-bottom: 5px;
   }
   
-  .help {
-    width: 150px;
-  }
   
-  .about {
-    width: 175px;
-  }
+  .club, .services, .help, .about {
+    width: auto; 
+}
