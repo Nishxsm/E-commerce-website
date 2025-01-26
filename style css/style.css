@@ -1,3 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
 body{
     font-family: 'Times New Roman', Times, serif;
     margin:0;
@@ -139,6 +146,8 @@ section h1{
 
 section p{
     color: #555;
+
+
 }
 
 
@@ -205,6 +214,7 @@ z-index: 2;
 }
 
 #home h1{
+    margin-left: 20px;
     font-size: 30px;
     color: black;
     margin-bottom: 10px;
@@ -212,7 +222,238 @@ z-index: 2;
 }
 
 #home p{
-    font-size: 18px;
+    margin-left: 20px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
+
+.categories{
+    padding: 20px;
+    text-align: center;
+}
+
+.categories h2{
+    margin-top: 100px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    font-family: 'Arial',sans-serif;
+}
+
+.scrollable-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap:15px;
+    overflow-x: auto;
+}
+
+.card-container{
+    display: flex;
+    gap: 15px;
+}
+
+.card{
+    min-width: 250px;
+    background-color:#a7d49b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    width:300px;
+    height:450px;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    font-family: "arial",sans-serif;
+    font-size: 1rem;
+    text-align:center;
+    margin-top: auto;
+    color: black;
+}
+
+.card-content p{
+    font-family: 'Arial', Helvetica, sans-serif; /* Change to your desired font */
+    font-size: 14px; /* Adjust font size */
+    color: black; /* Use your desired color */
+    line-height: 1.5;
+    margin-top: 10px; /* Adjust spacing from other content */
+    
+}
+
+.card-content a{
+    font-family: cursive;
+     text-decoration: none;
+     color: #6300ea;
+     font-weight: bold;
+}
+
+.card-content a:hover{
+    text-decoration: underline;
+}
+
+.light-pocket{
+    text-align: center;
+}
+
+
+.light-pocket h2{
+    margin-top: 100px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    font-family: 'Arial',sans-serif;
+    margin-left: 20px;
+}
+
+.scrollable-container2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap:15px;
+    overflow-x: auto;
+}
+
+.card-container2{
+    display: flex;
+    gap: 15px;
+}
+
+.card2{
+    margin-left: 20px;
+    min-width: 250px;
+    background-color:#a7d49b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    width:300px;
+    height:450px;
+}
+
+.card2:hover{
+    transform:translateY(-5px);
+}
+
+.card2 img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+}
+
+.card-content2{
+    padding:15px;
+}
+
+.card-content2 h3{
+    font-family: "arial",sans-serif;
+    font-size: 1rem;
+    text-align:center;
+    margin-top: auto;
+    color: black;
+}
+
+.card-content2 p{
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 14px;
+    color: black; 
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-content2 a{
+    font-family: cursive;
+     text-decoration: none;
+     color: #6300ea;
+     font-weight: bold;
+}
+
+.card-content2 a:hover{
+    text-decoration: underline;
+}
+
+
+footer {
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .upperDiv {
+    height: 40px;
+    background-color:#595858;
+  }
+  
+  .mainFooter {
+    height: fit-content;
+    color: #e4e4ff;
+    margin: 0px;
+    background-color:#333;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .mainAbout {
+    width: auto;
+  }
+  
+  .mainAbout p {
+    font-size: 0.9em;
+  }
+  
+  .list {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    line-height: 25px;
+  }
+  
+  .list li {
+    list-style-type: none;
+    font-weight: 300;
+  }
+  
+  .list a {
+    text-decoration: none;
+    color: #e4e4ff;
+    font-size: medium;
+  }
+  
+  .list a:hover {
+    text-decoration: underline;
+  }
+  
+  .club {
+    width: 150px;
+  }
+  
+  .services {
+    width: 175px;
+  
+  }
+  
+  .help {
+    width: 150px;
+  }
+  
+  .about {
+    width: 175px;
+  }
