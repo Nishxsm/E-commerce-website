@@ -256,7 +256,7 @@ z-index: 2;
 
 .card{
     min-width: 250px;
-    background-color:#a7d49b;
+    background-color:#92ac86;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -281,7 +281,7 @@ z-index: 2;
 }
 
 .card-content h3{
-    font-family: "arial",sans-serif;
+    font-family:monospace;
     font-size: 1rem;
     text-align:center;
     margin-top: auto;
@@ -337,7 +337,7 @@ z-index: 2;
 .card2{
     margin-left: 20px;
     min-width: 250px;
-    background-color:#a7d49b;
+    background-color:#92ac86;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -362,7 +362,7 @@ z-index: 2;
 }
 
 .card-content2 h3{
-    font-family: "arial",sans-serif;
+    font-family:monospace;
     font-size: 1rem;
     text-align:center;
     margin-top: auto;
