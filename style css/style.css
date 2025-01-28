@@ -609,3 +609,30 @@ footer {
 }
 
 
+#kids h1{
+    margin-left: 20px;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+#kids p{
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Home-finds h1{
+    margin-left: 20px;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+#Home-finds p{
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
