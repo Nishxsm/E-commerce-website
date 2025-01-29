@@ -1,22 +1,27 @@
-// To toggle sections with navigation links
-const links = document.querySelectorAll('.nav-left .nav-item');
+const links = document.querySelectorAll('.nav-left .nav-item, .nav-right .nav-item');
 const sections = document.querySelectorAll('section');
 
 links.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
 
-        // Hide all sections
-        sections.forEach(section => section.classList.remove('active'));
-
-        // Show the targeted section
+        // Get the target section ID from the link href
         const target = link.getAttribute('href').substring(1); // Get the ID from the href
         const targetSection = document.getElementById(target);
+
+        // If target section exists, toggle its visibility
         if (targetSection) {
-            targetSection.classList.add('active');
+            if (targetSection.classList.contains('active')) {
+                targetSection.classList.remove('active');
+            } else {
+                // Hide all other sections
+                sections.forEach(section => section.classList.remove('active'));
+                targetSection.classList.add('active');
+            }
         }
     });
 });
+
 
 // To handle "Learn More" buttons dynamically
 const learnMoreButtons = document.querySelectorAll('.card-content a, .card-content2 a');
@@ -55,3 +60,4 @@ function toggleMenu() {
         }
     });
 }
+
